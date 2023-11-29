@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url(/assets/fonts/DMSans-ExtraBold.ttf);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url(/assets/fonts/DMSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url(/assets/fonts/DMSans-Italic.ttf);
+  font-style: italic;
+}
+
+body {
+  font-family: "DM Sans";
+  height: 100vh;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content p {
+  margin: 5px;
+}
+
+#signature {
+  font-style: italic;
+}
+
+.socials {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials button {
+  border: solid 1px rgb(214, 214, 214);
+  border-radius: 999999px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+
+.socials img {
+  width: 35px;
+  aspect-ratio: 1/1;
+}
