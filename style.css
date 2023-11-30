@@ -17,6 +17,10 @@
 body {
   font-family: "DM Sans";
   height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
@@ -39,22 +43,57 @@ body {
   margin: 20px;
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0px;
+}
+
+.socials a {
+  position: relative;
+  padding: 10px;
+}
+
+.socials a:hover > button {
+  outline: solid 3px #ff77af;
+  transition: 0.1s;
+  cursor: pointer;
 }
 
 .socials button {
-  border: solid 1px rgb(214, 214, 214);
+  border: none;
+  outline: solid 1px rgb(214, 214, 214);
   border-radius: 999999px;
-  width: 50px;
-  height: 50px;
+  width: 69px;
+  height: 69px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  padding: 10px;
+  transition: 0.1s;
 }
 
 .socials img {
-  width: 35px;
+  width: 39px;
   aspect-ratio: 1/1;
+}
+
+#eyes {
+  animation: eyes-moving 3s linear infinite;
+}
+
+@keyframes eyes-moving {
+  0% {
+    transform: translateX(0px);
+  }
+
+  38% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(20px);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+  62% {
+    transform: translateX(0px);
+  }
 }
